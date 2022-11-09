@@ -1,0 +1,73 @@
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 2;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+form #close {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+form h1 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+form label {
+  margin-left: 0.5rem;
+  font-size: large;
+}
+form input {
+  margin: 1rem;
+}
+
+#valorar {
+  margin-top: 2rem;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  background-color: rgb(184, 52, 3);
+  color: #fff;
+  border: 1px solid rgb(184, 52, 3);
+  padding: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#valorar:hover {
+  background-color: white;
+  color: rgb(184, 52, 3);
+  border: 1px solid rgb(184, 52, 3);
+}
